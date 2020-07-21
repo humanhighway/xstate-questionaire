@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
+  "homepage": "https://humanhighway.github.io/xstate-questionaire",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.0.0",
@@ -28,6 +29,7 @@
     "core-js": "^3.0.0",
     "css-loader": "^3.5.3",
     "cypress": "^4.10.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.1.0",
     "jsdom": "^16.3.0",
@@ -40,7 +42,8 @@
     "dev": "webpack-dev-server ---config webpack.config.js --open --hot --inline",
     "build": "webpack -p --config webpack.config.js",
     "test": "jest --env=jsdom",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
